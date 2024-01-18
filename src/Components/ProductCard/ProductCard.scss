@@ -1,0 +1,49 @@
+@import "../../styles/main.scss";
+
+.ProductCard {
+  border: 1px solid #ddd; /* Border for the entire card */
+  border-radius: 8px; /* Rounded corners for the card */
+  overflow: hidden; /* Hide any content that exceeds the card boundaries */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle elevation */
+
+  /* Optional: Adjust the width, padding, and margin based on your design */
+  width: 300px;
+  padding: 16px;
+  margin: 16px;
+
+  &__photo {
+    margin-bottom: 12px; /* Spacing between the photo and the title */
+  }
+
+  &__photo-item {
+    width: 100%; /* Ensure the image takes the full width of its container */
+    height: auto; /* Maintain the aspect ratio of the image */
+    border-radius: 5px; /* Rounded corners for the image */
+  }
+
+  &__title {
+    text-align: center;
+    font-size: 18px; /* Adjust the font size of the title */
+    font-weight: bold; /* Make the title bold */
+    margin-bottom: 8px; /* Spacing between the title and buttons */
+  }
+
+  &__button {
+    margin-bottom: 8px; /* Spacing between buttons */
+  }
+
+  &__button a {
+    display: block;
+    padding: 8px 16px; /* Adjust the padding for the buttons */
+    text-decoration: none;
+    background-color: $color-dark-blue; /* Button background color */
+    color: #fff; /* Button text color */
+    border-radius: 50px; /* Rounded corners for the buttons */
+    text-align: center;
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  &__button a:hover {
+    background-color: #0056b3; /* Hover state background color */
+  }
+}

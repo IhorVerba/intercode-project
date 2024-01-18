@@ -1,0 +1,100 @@
+@import '../../styles/main.scss';
+
+.Carousel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  max-width: 100%;
+
+  &__slider {
+    height: 60vh;
+    max-width: 100%;
+    display: flex;
+    gap: 16px;
+    position: relative;
+
+    &-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      top: 50%;
+      transform: translateY(-50%); 
+      max-height: 100%;
+      width: 32px;
+      z-index: 2;
+      position: absolute;
+
+
+      &--left {
+        left: 5%;
+        background-image: url(../../assets/icons/arrow-left.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+
+      &--right {
+        right: 5%;
+        background-image: url(../../assets/icons/arrow-right.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    &-container {
+      height: 100%;
+      width: 100%;
+      overflow: hidden;
+      position: relative;
+    }
+
+    &-list {
+      height: 100%;
+      width: 500%;
+      display: flex;
+      gap: 1px;
+      transition-duration: 1s;
+    }
+
+    &-item {
+      flex: 1;
+      position: relative;
+    }
+
+    &-image {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      object-position: center center;
+    }
+  }
+
+  &__position {
+    position: relative;
+    margin-top: 8px;
+    width: 80px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+
+    &-item {
+      width: 14px;
+      height: 5px;
+      background-color: black;
+      transition-duration: 0.4s;
+      border: 5px solid transparent;
+      border-radius: 5px;
+
+      &:hover {
+        border: 5px solid grey;
+        transform: scale(1.5);
+      }
+    }
+  }
+}

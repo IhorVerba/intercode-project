@@ -1,0 +1,50 @@
+@import '../../styles/main.scss';
+
+.Header {
+  display: block;
+  height: 70px;
+  position: fixed;
+  // background-color: transparent;
+  background-color: $color-white;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  z-index: 1000;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 15px;
+
+
+  &__text {
+    color: $color-dark-blue;
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  &__logo {
+    width: 30px;
+    height: 30px;
+    margin-left:  auto;
+  }
+}
+
+.icon {
+  display: block;
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+  
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &--menu {
+    background-image: url(../../assets/icons/align-left.png);
+    display: block;
+  }
+}

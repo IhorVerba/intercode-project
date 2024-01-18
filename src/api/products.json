@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "Golf",
+    "buttonLink": "",
+    "img": "golf-r-line.png"
+  },
+  {
+    "id": 2,
+    "name": "New T-Roc",
+    "buttonLink": "",
+    "img": "t-roc.png"
+  },
+  {
+    "id": 3,
+    "name": "Tiguan",
+    "buttonLink": "",
+    "img": "tiguan.png"
+  },
+  {
+    "id": 4,
+    "name": "Arteon",
+    "buttonLink": "",
+    "img": "arteon-r-line.png"
+  },
+  {
+    "id": 5,
+    "name": "Arteon Shooting Brake",
+    "buttonLink": "",
+    "body": "arteon-sb.png"
+  },
+  {
+    "id": 6,
+    "name": "New Touareg",
+    "buttonLink": "",
+    "img": "touareg.png"
+  }
+]
