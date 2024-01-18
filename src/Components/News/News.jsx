@@ -6,7 +6,7 @@ import Article4Img from "../../assets/images/news-article4.jpg";
 
 export const News = () => {
   return (
-    <section className="section" id="News">
+    <section className="section" id="news">
       <h2 className="section section__title">
         <span className="section section__title-text">
           Актуальне зі світу Volkswagen в Україні

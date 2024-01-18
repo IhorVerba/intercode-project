@@ -1,4 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
+import { Link } from "react-router-dom";
 import "./Footer.scss";
 
 export const Footer = () => {
@@ -16,9 +17,9 @@ export const Footer = () => {
                 </li>
 
                 <li class="Footer__navlist-item">
-                  <a href="#exhibitions" class="Footer__link">
+                  <Link to="configurator" class="Footer__link">
                     Спеціальні пропозиції
-                  </a>
+                  </Link>
                 </li>
 
                 <li class="Footer__navlist-item">
@@ -39,27 +40,27 @@ export const Footer = () => {
           <nav>
               <ul class="Footer__navlist">
                 <li class="Footer__navlist-item">
-                  <a href="#header" class="Footer__link Footer__title">
+                  <p class="Footer__title">
                     Сервіс
-                  </a>
+                  </p>
                 </li>
 
                 <li class="Footer__navlist-item">
-                  <a href="#exhibitions" class="Footer__link">
+                  <Link to="not-found" class="Footer__link">
                     Пошук дилера
-                  </a>
+                  </Link>
                 </li>
 
                 <li class="Footer__navlist-item">
-                  <a href="#events" class="Footer__link">
+                  <Link to="not-found" class="Footer__link">
                     Відгуки та пропозиції
-                  </a>
+                  </Link>
                 </li>
 
                 <li class="Footer__navlist-item">
-                  <a href="#news" class="Footer__link">
+                  <Link to="not-found" class="Footer__link">
                     Підписка на новини 
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </nav>
@@ -93,19 +94,19 @@ export const Footer = () => {
               </ul>
             </nav>
           </div>
-
-          {/* <div class="Footer__copyright">
-            <p class="Footer__copyright-paragraph">© ТОВ "Порше Україна" 2023</p>
-            <a href="#134" class="Footer__link">
-              Privacy — Terms
-            </a>
-          </div>
-          <a href="#123" class="Footer__scroll-up"></a> */}
         </div>
       </div>
     </footer>
   );
 };
+
+// {/* <div class="Footer__copyright">
+//   <p class="Footer__copyright-paragraph">© ТОВ "Порше Україна" 2023</p>
+//   <a href="#134" class="Footer__link">
+//     Privacy — Terms
+//   </a>
+// </div>
+// <a href="#123" class="Footer__scroll-up"></a> */}
 
 // <div class="Footer__section Footer__section--contacts">
 //   <h5 class="Footer__title">Соціальні мережі</h5>

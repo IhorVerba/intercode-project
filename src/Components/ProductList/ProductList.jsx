@@ -4,6 +4,7 @@ import './ProductList.scss';
 import productsFromApi from '../../api/products.json';
 
 export const ProductList = () => {
+  
   return (
     <ul className="ProductList">
       {productsFromApi.map(product => (

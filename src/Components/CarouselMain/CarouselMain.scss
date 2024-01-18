@@ -86,14 +86,14 @@
     &-item {
       width: 14px;
       height: 5px;
-      background-color: black;
+      background-color: $color-dark-blue;
       transition-duration: 0.4s;
       border: 5px solid transparent;
       border-radius: 5px;
 
       &:hover {
-        border: 5px solid grey;
-        transform: scale(1.5);
+        border: 5px solid $color-light-blue;
+        transform: scale(1.4);
       }
     }
   }

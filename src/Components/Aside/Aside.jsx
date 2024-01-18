@@ -1,4 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
+import { Link } from "react-router-dom";
 import "./Aside.scss";
 
 export const Aside = () => {
@@ -15,9 +16,9 @@ export const Aside = () => {
         <nav class="menu__nav">
           <ul class="menu__nav-list">
             <li class="menu__list-item">
-              <a href="#head" class="menu__nav-link">
+              <Link to="#header" class="menu__nav-link">
                 Головна
-              </a>
+              </Link>
             </li>
 
             <li class="menu__list-item">
@@ -27,7 +28,7 @@ export const Aside = () => {
             </li>
 
             <li class="menu__list-item">
-              <a href="#News" class="menu__nav-link">
+              <a href="#news" class="menu__nav-link">
                 Новини
               </a>
             </li>
