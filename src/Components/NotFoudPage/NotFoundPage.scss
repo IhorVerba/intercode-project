@@ -4,24 +4,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  // background-color: transparent;
-  height: 100vh; /* Adjust based on your design */
-  overflow: hidden; /* Ensure the image doesn't overflow the container */
-}
-
-.NotFoundPage img {
-  width: 100%;
-  height: auto;
-  transition: transform 0.5s ease; /* Add a smooth transition effect */
-
-  /* Optional: Add max-width and max-height to ensure the image doesn't exceed its original dimensions */
-  max-width: 100%;
-  max-height: 100%;
-}
-
-/* Optional: You can add a media query to adjust the transition speed on smaller screens */
-@media screen and (max-width: 600px) {
-  .NotFoundPage img {
-    transition: transform 0.3s ease; /* Adjust the transition speed for smaller screens */
-  }
+  height: 100vh;
+  overflow: hidden;
+  background-image: url('../../assets/images/404Page.jpg');
+  background-size: cover; /* Adjust as needed to cover the container */
+  background-position: center; /* Adjust as needed to position the image */
+  /* Optional: You can set a background color if the image doesn't cover the entire container */
+  /* background-color: #f0f0f0; */
 }

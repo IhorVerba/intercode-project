@@ -1,6 +1,7 @@
+import { Link } from "react-router-dom";
 import "./ProductCard.scss";
 
-export const ProductCard = ({ product: { name, buttonLink, img } }) => {
+export const ProductCard = ({ product: { id, name, buttonLink, img } }) => {
   return (
     <div className="ProductCard">
       <div className="ProductCard__photo">
@@ -14,21 +15,11 @@ export const ProductCard = ({ product: { name, buttonLink, img } }) => {
         <h4 className="ProductCard__title-item">{name}</h4>
       </div>
       <div className="ProductCard__button">
-        <a href={buttonLink}>Огляд моделі</a>
+        <Link to={`/car/${id}`}>Огляд моделі</Link>
       </div>
       <div className="ProductCard__button">
-        <a href={buttonLink}>Сконфігурувати</a>
+        <Link to={`/configurator/${id}`}>Сконфігурувати</Link>
       </div>
     </div>
   );
 };
-
-// import { AddToFavButton } from '../AddToFavButton';
-// import { AddToCartButton } from '../AddToCartButton';
-
-// {/* <div className="ProductCard__buttons">
-// <AddToCartButton product={product} />
-
-// <AddToFavButton product={product} />
-// </div> */}
-

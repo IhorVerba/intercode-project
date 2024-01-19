@@ -1,13 +1,13 @@
 import React from 'react';
 import { ProductCard } from '../ProductCard';
 import './ProductList.scss';
-import productsFromApi from '../../api/products.json';
+import { productsData } from '../../api/products';
 
 export const ProductList = () => {
   
   return (
     <ul className="ProductList">
-      {productsFromApi.map(product => (
+      {productsData.map(product => (
         <li key={product.id} className="ProductList__item">
           <ProductCard product={product} />
         </li>

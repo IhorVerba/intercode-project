@@ -2,13 +2,19 @@
 import { Link } from "react-router-dom";
 import "./Aside.scss";
 
+
+
 export const Aside = () => {
+  const closeMenu = () => {
+    window.location.hash = "";
+  };
+  
   return (
     <aside class="menu" id="menu">
       <div class="container">
         <div class="menu__top top-bar">
-          <div class="top-bar__icons">
-            <a href="#header" class="icon icon--cross"></a>
+          <div className="top-bar__icons">
+            <Link to="/" className="icon icon--cross" onClick={closeMenu}></Link>
           </div>
           <div className="top-bar__text--menu">Закрити</div>
         </div>
@@ -16,27 +22,27 @@ export const Aside = () => {
         <nav class="menu__nav">
           <ul class="menu__nav-list">
             <li class="menu__list-item">
-              <Link to="#header" class="menu__nav-link">
+              <Link to="/" class="menu__nav-link" onClick={closeMenu}>
                 Головна
               </Link>
             </li>
 
             <li class="menu__list-item">
-              <a href="123" class="menu__nav-link">
+              <Link to="configurator" class="menu__nav-link" onClick={closeMenu}>
                 Модельний ряд
-              </a>
+              </Link>
             </li>
 
             <li class="menu__list-item">
-              <a href="#news" class="menu__nav-link">
+              <Link to="/" class="menu__nav-link" onClick={closeMenu}>
                 Новини
-              </a>
+              </Link>
             </li>
 
             <li class="menu__list-item">
-              <a href="123" class="menu__nav-link">
+              <Link to="not-found" class="menu__nav-link" onClick={closeMenu}>
                 Сервіси та ексесуари 
-              </a>
+              </Link>
             </li>
           </ul>
         </nav>
