@@ -15,7 +15,7 @@ export const ProductCard = ({ product: { id, name, buttonLink, img } }) => {
         <h4 className="ProductCard__title-item">{name}</h4>
       </div>
       <div className="ProductCard__button">
-        <Link to={`/car/${id}`}>Огляд моделі</Link>
+        <Link to={`/configurator/${id}`}>Огляд моделі</Link>
       </div>
       <div className="ProductCard__button">
         <Link to={`/configurator/${id}`}>Сконфігурувати</Link>

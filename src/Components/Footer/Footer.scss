@@ -1,16 +1,18 @@
 @import '../../styles/main.scss';
 
-// Footer Styles
 
 $footer-bg-color: #001e50;
 $footer-text-color: #ffffff;
 
 .Footer {
   // background-image: -webkit-radial-gradient(top left,circle,#00437a 0,#001e50 100%);
+  bottom: 0;
   background-image: radial-gradient(circle at top left,#00437a 0,#001e50 100%);
   color: $color-white;
-  padding: 40px 20px;
+  padding: 50px 30px;
   box-sizing: border-box;
+  width: 100%;
+  position: relative;
 
   &__content {
     display: flex;

@@ -1,26 +1,25 @@
 export const colors = [
-  { label: "Midnight Grey", value: "grey", price: 0, img: "" },
-  { label: "Pearl White", value: "white", price: 30000, img: "" },
-  { label: "Solid Black", value: "black", price: 40000, img: "" },
+  { label: "Midnight Grey", value: "grey", price: 0, img: "color-grey.png" },
+  { label: "Pearl White", value: "white", price: 30000, img: "color-white.png" },
+  { label: "Solid Black", value: "black", price: 40000, img: "color-black.png" },
 ];
 
 export const productsData = [
   {
     id: 1,
     name: "Volkswagen Golf",
-    buttonLink: "",
     img: "golf-r-line.png",
-    imgw1: "golf-grey-w16.png",
     color: colors,
+    price: 1100000,
     wheels: [
       {
-        img: "golf-grey-w16.png",
+        src: "golf/wheel16-golf.png",
         label: '16" Диски "Norfolk" R16',
-        value: "",
+        value: "wheel_1",
         price: 0,
       },
       {
-        img: "golf-black-w17.png",
+        src: "golf/wheel17-golf.png",
         label: '17" Диски "Ventura" R17',
         value: "wheel_2",
         price: 40000,
@@ -30,18 +29,18 @@ export const productsData = [
   {
     id: 2,
     name: "Volkswagen T-Roc",
-    buttonLink: "",
     img: "t-roc.png",
     color: colors,
+    price: 1200000,
     wheels: [
       {
-        img: "",
+        src: "troc/wheel16-troc.png",
         label: '16" Диски "Chester" R16',
         value: "",
         price: 0,
       },
       {
-        img: "",
+        src: "troc/wheel17-troc.png",
         label: '17" Диски "Johannesburg" R17',
         value: "",
         price: 40000,
@@ -51,18 +50,18 @@ export const productsData = [
   {
     id: 3,
     name: "Volkswagen Tiguan",
-    buttonLink: "",
     img: "tiguan.png",
     color: colors,
+    price: 1600000,
     wheels: [
       {
-        img: "",
+        src: "tiguan/wheel17-tiguan.png",
         label: '17" Диски "Montana" R17',
         value: "",
         price: 0,
       },
       {
-        img: "",
+        src: "tiguan/wheel19-tiguan.png",
         label: '19" Диски "Victoria Falls" R19',
         value: "",
         price: 40000,
@@ -72,34 +71,40 @@ export const productsData = [
   {
     id: 4,
     name: "Volkswagen Arteon",
-    buttonLink: "",
     img: "arteon-r-line.png",
     color: colors,
+    price: 2000000,
     wheels: [
       {
-        img: "",
-        label: "",
+        src: "arteon/wheel18-arteon.jpg",
+        label: '18" Диски "Almere Adamantium" R18',
         value: "",
         price: 0,
+      },
+      {
+        src: "arteon/wheel20-arteon.jpg",
+        label: '20" Диски "Nashville" R20',
+        value: "",
+        price: 40000,
       },
     ],
   },
   {
     id: 5,
     name: "Volkswagen Touareg",
-    buttonLink: "",
     img: "touareg.png",
     color: colors,
+    price: 3000000,
     wheels: [
       {
-        img: "",
+        src: "touareg/wheel20-touareg.png",
         label: '20" Диски "Braga" R20',
         value: "",
         price: 0,
       },
       {
-        img: "",
-        label: '21" Диски "Leeds" R20',
+        src: "touareg/wheel21-touareg.png",
+        label: '21" Диски "Leeds" R21',
         value: "wheel_2",
         price: 40000,
       },

@@ -1,13 +1,8 @@
 import "./ConfiguratorMain.scss";
 import { useParams } from "react-router-dom";
 import { productsData } from "../../api/products";
+import { colors } from "../../api/products";
 import Golf from "../../assets/images/Configurator/golf-black-w16.png";
-
-import Grey from "../../assets/images/Configurator/color-grey.png";
-import White from "../../assets/images/Configurator/color-white.png";
-import Black from "../../assets/images/Configurator/color-black.png";
-
-const BASE_URL = "../../assets/images/Configurator/";
 
 export const ConfiguratorMain = () => {
   const { id } = useParams();
@@ -17,42 +12,58 @@ export const ConfiguratorMain = () => {
       <div className="ConfiguratorMain__container">
         <div className="ConfiguratorMain__imageContainer">
           <img src={Golf} alt="golf" />
+          {/* <img src={`/Configurator/${car.img}`} alt={`${car.name}`} /> */}
+          {/* <span>Current name is {car.name}</span> */}
+          {/* <span>Current id is {car.id}</span> */}
         </div>
-        {/* <img src={`${BASE_URL}${car.wheels.img}`} alt={`${car.name}`} /> */}
-        <img src={`/Configurator/${car.wheels[0].img}`} alt={`${car.name}`} />
-        <p>Current name is {car.name}</p> 
-        <p>Current id is {car.id}</p> 
         <div className="ConfiguratorMain__optionsContainer">
-          <p className="ConfiguratorMain__optionsTitle">Колір</p>
-          <div className="ConfiguratorMain__optionsColors">
-            <ul>
-              <li label="grey">
-                <img src={Grey} label="grey" alt="Grey" />
-              </li>
-              <li>
-                <img src={White} alt="White" />
-              </li>
-              <li>
-                <img src={Black} alt="Wlack" />
-              </li>
-            </ul>
+          <div className="ConfiguratorMain__optionsWrapper">
+            <p className="ConfiguratorMain__optionsTitle">Обрати колір</p>
+            <div className="ConfiguratorMain__options">
+              <ul>
+                {colors.map((color, index) => (
+                  <li key={index}>
+                    <img src={`/Configurator/${color.img}`} alt={color.name} />
+                  </li>
+                ))}
+              </ul>
+            </div>
+              <div className="ConfiguratorMain__options--text">
+                {`COLOR NAME `}
+                <b>{`UAH COLOR PRICE`}</b>
+                <p></p>
+              </div>
           </div>
+
+          <div className="ConfiguratorMain__optionsWrapper">
+            <p className="ConfiguratorMain__optionsTitle">Обрати колеса</p>
+            <div className="ConfiguratorMain__options">
+              <ul>
+                {car.wheels.map((wheel, index) => (
+                  <li className="ConfiguratorMain__wheels" key={index}>
+                    <img
+                      src={`/Configurator/wheels/${wheel.src}`}
+                      alt={wheel.label}
+                    />
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div className="ConfiguratorMain__options--text">
+                {`Wheel NAME `}
+                <b>{`UAH WHEEL PRICE`}</b>
+                <p></p>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div className="ConfiguratorMain__footer">
+        <div>
+          <span>
+            Загальна ціна: <b>UAH {car.price}</b>
+          </span>
         </div>
       </div>
     </div>
   );
 };
-
-// const CarDetailsPage = () => {
-//   const { id } = useParams();
-//   const car = cars.find(c => c.id === parseInt(id));
-//   if (!car) {
-//     return <div>Машина не знайдена</div>;
-//   }
-//   return (
-//     <div>
-//       <h1>{`${car.brand} ${car.model}`}</h1>
-//       <p>{car.details}</p>
-//     </div>
-//   );
-// }
