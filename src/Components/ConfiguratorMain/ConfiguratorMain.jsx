@@ -12,7 +12,7 @@ export const ConfiguratorMain = () => {
       <div className="ConfiguratorMain__container">
         <div className="ConfiguratorMain__imageContainer">
           <img src={Golf} alt="golf" />
-          {/* <img src={`/Configurator/${car.img}`} alt={`${car.name}`} /> */}
+          <img src={`/Configurator/${car.img}`} alt={`${car.name}`} />
           {/* <span>Current name is {car.name}</span> */}
           {/* <span>Current id is {car.id}</span> */}
         </div>
