@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import "./ProductCard.scss";
 
-export const ProductCard = ({ product: { id, name, buttonLink, img } }) => {
+export const ProductCard = ({ product: { id, name, img } }) => {
   return (
     <div className="ProductCard">
       <div className="ProductCard__photo">

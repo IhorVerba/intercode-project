@@ -22,7 +22,6 @@ const App = () => {
           <Routes>
             <Route path="/" element={<Home />}/>
             <Route path="/not-found" element={<NotFoundPage />}/>
-            {/* <Route path="/configurator" element={<ConfiguratorMain />}/> */}
             <Route path="/configurator/:id" element={<ConfiguratorMain />}/>
           </Routes>
           

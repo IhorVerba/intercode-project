@@ -28,12 +28,11 @@
   }
 
   &__optionsContainer {
-    // Add this to create space between image container and color options
     margin-top: 20px;
 
     @media (min-width: 992px) {
-      margin-top: 0; // Remove the margin on tablets and PCs
-      width: 800px; // Set the width for row layout
+      margin-top: 0; 
+      width: 800px; 
     }
   }
 
@@ -58,13 +57,12 @@
       border-radius: 50%;
       overflow: hidden;
 
-      // Add styles to center the image within the circular container
       display: flex;
       align-items: center;
       justify-content: center;
 
-      // Add some border for better visibility
       border: 3px solid #ddd;
+      cursor: pointer;
     }
 
     & img {
@@ -73,16 +71,13 @@
       object-fit: cover;
     }
 
-    &__wheels {
-      width: 80px; /* Set the width for larger images */
-      height: 80px; /* Set the height for larger images */
-    }
+    // &__wheels {
+    //   width: 80px; /* Set the width for larger images */
+    //   height: 80px; /* Set the height for larger images */
+    // }
   }
 
-  &__wheels {
-    width: 80px; /* Set the width for larger images */
-    height: 80px; /* Set the height for larger images */
-  }
+  
 
   &__footer {
     width: 100%;

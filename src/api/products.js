@@ -9,6 +9,7 @@ export const productsData = [
     id: 1,
     name: "Volkswagen Golf",
     img: "golf-r-line.png",
+    imgConfig: 'golf-grey-w16.png',
     color: colors,
     price: 1100000,
     wheels: [
@@ -30,6 +31,7 @@ export const productsData = [
     id: 2,
     name: "Volkswagen T-Roc",
     img: "t-roc.png",
+    imgConfig: 'troc-grey-w16.png',
     color: colors,
     price: 1200000,
     wheels: [
@@ -51,6 +53,7 @@ export const productsData = [
     id: 3,
     name: "Volkswagen Tiguan",
     img: "tiguan.png",
+    imgConfig: 'tiguan-grey-w17.png',
     color: colors,
     price: 1600000,
     wheels: [
@@ -72,6 +75,7 @@ export const productsData = [
     id: 4,
     name: "Volkswagen Arteon",
     img: "arteon-r-line.png",
+    imgConfig: 'arteon-grey-w18.jpg',
     color: colors,
     price: 2000000,
     wheels: [
@@ -93,6 +97,7 @@ export const productsData = [
     id: 5,
     name: "Volkswagen Touareg",
     img: "touareg.png",
+    imgConfig: 'touareg-grey-w18.png',
     color: colors,
     price: 3000000,
     wheels: [
@@ -111,3 +116,13 @@ export const productsData = [
     ],
   },
 ];
+
+
+export const initialConfig = {
+  1: {
+    car: "long_range_plus",
+    model: "",
+    color: "white",
+    wheels: "",
+  }
+};

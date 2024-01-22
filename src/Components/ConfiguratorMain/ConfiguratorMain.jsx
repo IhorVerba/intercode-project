@@ -2,7 +2,7 @@ import "./ConfiguratorMain.scss";
 import { useParams } from "react-router-dom";
 import { productsData } from "../../api/products";
 import { colors } from "../../api/products";
-import Golf from "../../assets/images/Configurator/golf-black-w16.png";
+// import Golf from "../../assets/images/Configurator/golf-black-w16.png";
 
 export const ConfiguratorMain = () => {
   const { id } = useParams();
@@ -11,8 +11,8 @@ export const ConfiguratorMain = () => {
     <div className="ConfiguratorMain">
       <div className="ConfiguratorMain__container">
         <div className="ConfiguratorMain__imageContainer">
-          <img src={Golf} alt="golf" />
-          <img src={`/Configurator/${car.img}`} alt={`${car.name}`} />
+          {/* <img src={Golf} alt="golf" /> */}
+          <img src={`/Configurator/${car.imgConfig}`} alt={`${car.name}`} />
           {/* <span>Current name is {car.name}</span> */}
           {/* <span>Current id is {car.id}</span> */}
         </div>
