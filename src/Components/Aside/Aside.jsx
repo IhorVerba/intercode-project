@@ -28,7 +28,7 @@ export const Aside = () => {
             </li>
 
             <li class="menu__list-item">
-              <Link to="configurator" class="menu__nav-link" onClick={closeMenu}>
+              <Link to="not-found" class="menu__nav-link" onClick={closeMenu}>
                 Модельний ряд
               </Link>
             </li>

@@ -12,6 +12,9 @@ export const productsData = [
     imgConfig: 'golf-grey-w16.png',
     color: colors,
     price: 1100000,
+    models: [
+      
+    ],
     wheels: [
       {
         src: "golf/wheel16-golf.png",
@@ -97,7 +100,7 @@ export const productsData = [
     id: 5,
     name: "Volkswagen Touareg",
     img: "touareg.png",
-    imgConfig: 'touareg-grey-w18.png',
+    imgConfig: 'touareg-grey-w20.png',
     color: colors,
     price: 3000000,
     wheels: [

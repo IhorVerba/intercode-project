@@ -11,27 +11,27 @@ export const Footer = () => {
             <nav>
               <ul class="Footer__navlist">
                 <li class="Footer__navlist-item">
-                  <a href="#header" class="Footer__link Footer__title">
+                  <Link to="not-found" class="Footer__link Footer__title">
                     Volkswagen
-                  </a>
+                  </Link>
                 </li>
 
                 <li class="Footer__navlist-item">
-                  <Link to="configurator" class="Footer__link">
+                  <Link to="not-found" class="Footer__link">
                     Спеціальні пропозиції
                   </Link>
                 </li>
 
                 <li class="Footer__navlist-item">
-                  <a href="#events" class="Footer__link">
+                  <Link to="not-found" class="Footer__link">
                     Новини
-                  </a>
+                  </Link>
                 </li>
 
                 <li class="Footer__navlist-item">
-                  <a href="#news" class="Footer__link">
+                  <Link to="not-found" class="Footer__link">
                     Склад авто в Україні
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </nav>
@@ -69,27 +69,27 @@ export const Footer = () => {
           <nav>
               <ul class="Footer__navlist">
                 <li class="Footer__navlist-item">
-                  <a href="#header" class="Footer__link Footer__title">
+                  <Link to="not-found" class="Footer__link Footer__title">
                     Підтримка
-                  </a>
+                  </Link>
                 </li>
 
                 <li class="Footer__navlist-item">
-                  <a href="#exhibitions" class="Footer__link">
+                  <Link to="not-found" class="Footer__link">
                     Volkswagen в Україні
-                  </a>
+                  </Link>
                 </li>
 
                 <li class="Footer__navlist-item">
-                  <a href="#events" class="Footer__link">
+                  <Link to="not-found" class="Footer__link">
                     Конфіденційність персональних данних
-                  </a>
+                  </Link>
                 </li>
 
                 <li class="Footer__navlist-item">
-                  <a href="#news" class="Footer__link">
+                  <Link to="not-found" class="Footer__link">
                     Система повідомлення порушень
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </nav>

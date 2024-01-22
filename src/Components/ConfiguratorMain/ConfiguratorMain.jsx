@@ -2,11 +2,17 @@ import "./ConfiguratorMain.scss";
 import { useParams } from "react-router-dom";
 import { productsData } from "../../api/products";
 import { colors } from "../../api/products";
+import { useState } from "react";
 // import Golf from "../../assets/images/Configurator/golf-black-w16.png";
 
 export const ConfiguratorMain = () => {
   const { id } = useParams();
   const car = productsData.find((c) => c.id === parseInt(id));
+
+  const [state, setState] = useState({
+    name: car.name
+  })
+
   return (
     <div className="ConfiguratorMain">
       <div className="ConfiguratorMain__container">
