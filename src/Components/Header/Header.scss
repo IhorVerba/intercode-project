@@ -1,4 +1,4 @@
-@import '../../styles/main.scss';
+@import "../../styles/main.scss";
 
 .Header {
   display: block;
@@ -21,7 +21,6 @@
   align-items: center;
   gap: 15px;
 
-
   &__text {
     color: $color-dark-blue;
     font-size: 16px;
@@ -31,7 +30,15 @@
   &__logo {
     width: 30px;
     height: 30px;
-    margin-left:  auto;
+    margin-left: auto;
+  }
+
+  &__button {
+    background-color: $color-dark-blue;
+    color: $color-white;
+    padding: 10px 15px;
+    border-radius: 50px;
+    cursor: pointer;
   }
 }
 
@@ -40,7 +47,7 @@
   width: 24px;
   height: 24px;
   margin-left: 10px;
-  
+
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

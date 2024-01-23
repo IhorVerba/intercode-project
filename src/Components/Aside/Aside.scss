@@ -1,19 +1,10 @@
-@import "../../styles/main.scss";
+@import '../../styles/main.scss';
 
 .menu {
   position: fixed;
   height: 100vh;
-  background-image: -webkit-radial-gradient(
-    top left,
-    circle,
-    #00437a 0,
-    #001e50 100%
-  );
-  background-image: radial-gradient(
-    circle at top left,
-    #00437a 0,
-    #001e50 100%
-  );
+  background-image: -webkit-radial-gradient(top left,circle,#00437a 0,#001e50 50%);
+  background-image: radial-gradient(circle at top left,#00437a 0,#001e50 100%);
   color: $color-white;
   top: 0;
   left: 0;
@@ -21,52 +12,63 @@
   padding: 20px;
   z-index: 1000;
 
-  transition: all 0.3s;
-  opacity: 0;
-  transform: translateX(-100%);
-  pointer-events: none;
-
-  &:target {
-    opacity: 1;
-    transform: translateX(0);
-    pointer-events: all;
-  }
-
   &__top {
-    position: sticky;
     margin-bottom: 30px;
   }
-
-  &top-bar__text--menu {
-    color: $color-white;
-  }
-
-  &__nav {
-    margin-left: 75px;
-    display: flex;
-    text-align: left;
-    line-height: 150%;
-  }
-
-  &__list-item {
-    margin-bottom: 30px;
-  }
-
-  &__nav-link {
-    font-size: 24px;
-    font-weight: 400;
-
-    &:hover {
-      color: #00b0f0;
-      -webkit-transition: color 0.25s ease-in-out;
-      transition: color 0.25s ease-in-out;
+  
+  &top-bar {
+      display: flex;
+      justify-content: left;
+      align-items: center;
+      gap: 20px;
+      font-size: 16px;
+      font-weight: bold;
+    }
+    
+    &top-bar__text--menu {
+      color: $color-white
+    }
+    
+    
+    &__nav {
+      margin-left: 75px;
+      display: flex;
+      text-align: left;
+      line-height: 150%;
+    }
+    
+    &__list-item {
+      margin-bottom: 30px;
+    }
+    
+    &__nav-link {
+      font-size: 24px;
+      font-weight: 400;
+      
+      &:hover{
+        color: #00b0f0;
+        transition: color .25s ease-in-out;
+      }
     }
   }
-}
-
-.icon {
-  &--cross {
-    background-image: url(../../assets/./icons/x1.png);
-    display: block;
+  
+  .icon {
+    &--cross {
+      background-image: url(../../assets/./icons/x1.png);
+      display: block;
+    }
   }
-}
+  
+  
+
+  
+  
+
+
+
+
+
+
+
+
+

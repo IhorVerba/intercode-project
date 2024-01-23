@@ -2,10 +2,12 @@
 
 /* General styles */
 body {
+  height: 100%;
   margin: 0;
   padding: 0;
   background-color: $color-white;
   color: $color-black;
+  overflow-y: scroll;
 }
 
 .section__verticalLine {

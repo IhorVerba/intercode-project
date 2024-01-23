@@ -9,12 +9,25 @@ import { Header } from "./Components/Header";
 import { Home } from './Components/Home/Home';
 import { ConfiguratorMain } from './Components/ConfiguratorMain/ConfiguratorMain';
 import { NotFoundPage } from './Components/NotFoudPage/NotFoundPage';
+import { useState } from 'react';
 
 const App = () => {
+  const [isMenuOpen, setMenuOpen] = useState(false);
+
+  const handleClick = () => {
+    setMenuOpen(true);
+  };
+
+  const closeMenu = () => {
+    setMenuOpen(false);
+  };
+
   return (
-    <div className="App">
-      <Header />
-      <Aside />
+    <div className={`App ${isMenuOpen ? 'menu-open' : ''}`}>
+      <Header onClickMenu={handleClick} />
+      
+      {isMenuOpen && <Aside closeMenu={closeMenu} />}
+
 
       <main className="main-content">
         <div className="main-content__container">

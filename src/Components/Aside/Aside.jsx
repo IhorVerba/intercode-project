@@ -1,47 +1,55 @@
-/* eslint-disable jsx-a11y/anchor-has-content */
 import { Link } from "react-router-dom";
 import "./Aside.scss";
+import { useTranslation } from "react-i18next";
 
+export const Aside = ({ closeMenu }) => {
+  const { t } = useTranslation();
 
-
-export const Aside = () => {
-  const closeMenu = () => {
-    window.location.hash = "";
-  };
-  
   return (
-    <aside class="menu" id="menu">
-      <div class="container">
-        <div class="menu__top top-bar">
+    <aside className="menu">
+      <div className="container">
+        <div className="menu__top top-bar">
           <div className="top-bar__icons">
-            <Link to="/" className="icon icon--cross" onClick={closeMenu}></Link>
+            <div
+              className="icon icon--cross"
+              onClick={closeMenu}
+            ></div>
           </div>
-          <div className="top-bar__text--menu">Закрити</div>
+
+          <div className="top-bar__text--menu">{t("close")}</div>
         </div>
 
-        <nav class="menu__nav">
-          <ul class="menu__nav-list">
-            <li class="menu__list-item">
-              <Link to="/" class="menu__nav-link" onClick={closeMenu}>
-                Головна
+        <nav className="menu__nav">
+          <ul className="menu__nav-list">
+            <li className="menu__list-item">
+              <Link to="/" className="menu__nav-link" onClick={closeMenu}>
+                {t("home")}
               </Link>
             </li>
 
-            <li class="menu__list-item">
-              <Link to="not-found" class="menu__nav-link" onClick={closeMenu}>
-                Модельний ряд
+            <li className="menu__list-item">
+              <Link
+                to="not-found"
+                className="menu__nav-link"
+                onClick={closeMenu}
+              >
+                {t("modelRange")}
               </Link>
             </li>
 
-            <li class="menu__list-item">
-              <Link to="/" class="menu__nav-link" onClick={closeMenu}>
-                Новини
+            <li className="menu__list-item">
+              <Link to="/" className="menu__nav-link" onClick={closeMenu}>
+                {t("news")}
               </Link>
             </li>
 
-            <li class="menu__list-item">
-              <Link to="not-found" class="menu__nav-link" onClick={closeMenu}>
-                Сервіси та ексесуари 
+            <li className="menu__list-item">
+              <Link
+                to="not-found"
+                className="menu__nav-link"
+                onClick={closeMenu}
+              >
+                {t("servicesAndAccessories")}
               </Link>
             </li>
           </ul>

@@ -2,9 +2,11 @@ import "./ConfiguratorMain.scss";
 import { useParams } from "react-router-dom";
 import { productsData } from "../../api/products";
 import { colors } from "../../api/products";
+import { useTranslation } from "react-i18next";
 import { useEffect, useState } from "react";
 
 export const ConfiguratorMain = () => {
+  const { t } = useTranslation();
   const { id } = useParams();
   const car = productsData.find((c) => c.id === parseInt(id));
 
@@ -41,19 +43,6 @@ export const ConfiguratorMain = () => {
   
   const totalPrice =
   car.price + configuration.selectedColor.price + configuration.selectedWheel.price;
-
-  // useEffect(() => {
-  //   localStorage.setItem("config", JSON.stringify(configuration));
-  // }, [configuration]);
-
-  // useEffect(() => {
-  //   const savedConfig = localStorage.getItem("config");
-  //   if (savedConfig) {
-  //     setConfiguration(JSON.parse(savedConfig));
-  //   }
-  // }, []);
-
-
   
   return (
     <div className="ConfiguratorMain">
@@ -63,7 +52,7 @@ export const ConfiguratorMain = () => {
         </div>
         <div className="ConfiguratorMain__optionsContainer">
           <div className="ConfiguratorMain__optionsWrapper">
-            <p className="ConfiguratorMain__optionsTitle">Обрати колір</p>
+            <p className="ConfiguratorMain__optionsTitle">{t("configuratorColor")}</p>
             <div className="ConfiguratorMain__options">
               <ul>
                 {colors.map((color, index) => (
@@ -85,7 +74,7 @@ export const ConfiguratorMain = () => {
           </div>
 
           <div className="ConfiguratorMain__optionsWrapper">
-            <p className="ConfiguratorMain__optionsTitle">Обрати колеса</p>
+            <p className="ConfiguratorMain__optionsTitle">{t("configuratorWheels")}</p>
             <div className="ConfiguratorMain__options">
               <ul>
                 {car.wheels.map((wheel, index) => (
@@ -113,7 +102,7 @@ export const ConfiguratorMain = () => {
       <div className="ConfiguratorMain__footer">
         <div>
           <span>
-            Загальна ціна: <b>UAH {formatNumber(totalPrice)}</b>
+          {t("configuratorPrice")} <b>UAH {formatNumber(totalPrice)}</b>
           </span>
         </div>
       </div>
