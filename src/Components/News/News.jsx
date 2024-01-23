@@ -3,6 +3,7 @@ import Article1Img from "../../assets/images/news-article1.jpg";
 import Article2Img from "../../assets/images/news-article2.jpg";
 import Article3Img from "../../assets/images/news-article3.jpg";
 import Article4Img from "../../assets/images/news-article4.jpg";
+import { Link } from "react-router-dom";
 
 export const News = () => {
   return (
@@ -15,7 +16,7 @@ export const News = () => {
 
       <article className="article section__article">
         <div className="article__container">
-          <img className="article__img" src={Article1Img} alt="" />
+          <img className="article__img" src={Article1Img} alt="article" />
           <div className="article__wrapper">
             <span className="article__eyebrow">
               Всеосяжне оновлення флагману Volkswagen
@@ -26,16 +27,16 @@ export const News = () => {
                 технологіями
               </span>
             </h3>
-            <a href="123" className="article__link">
+            <Link to="not-found" className="article__link">
               <span>Дізнатися більше</span>
-            </a>
+            </Link>
           </div>
         </div>
       </article>
 
       <article className="article section__article">
         <div className="article__container">
-          <img className="article__img" src={Article2Img} alt="" />
+          <img className="article__img" src={Article2Img} alt="article" />
           <div className="article__wrapper">
             <span className="article__eyebrow">
               Нове покоління SUV бестселлера
@@ -45,39 +46,39 @@ export const News = () => {
                 Світова прем'єра <b>нового Tiguan</b>
               </span>
             </h3>
-            <a href="123" className="article__link">
+            <Link to="not-found" className="article__link">
               <span>Дізнатися більше</span>
-            </a>
+            </Link>
           </div>
         </div>
       </article>
 
       <article className="article section__article">
         <div className="article__container">
-          <img className="article__img" src={Article3Img} alt="" />
+          <img className="article__img" src={Article3Img} alt="article" />
           <div className="article__wrapper">
             <h3 className="article__title">
               Порше Україна та бренд Volkswagen передали 2 автомобілі Volkswagen
               T-Cross та пальне блогодійній організації СОС Дитячі Містечка
               України
             </h3>
-            <a href="123" className="article__link">
+            <Link to="not-found" className="article__link">
               <span>Дізнатися більше</span>
-            </a>
+            </Link>
           </div>
         </div>
       </article>
 
       <article className="article section__article">
         <div className="article__container">
-          <img className="article__img" src={Article4Img} alt="" />
+          <img className="article__img" src={Article4Img} alt="article" />
           <div className="article__wrapper">
             <h3 className="article__title">
               Заява ТОВ "Порше Україна" щодо війни в Україні
             </h3>
-            <a href="123" className="article__link">
+            <Link to="not-found" className="article__link">
               <span>Дізнатися більше</span>
-            </a>
+            </Link>
           </div>
         </div>
       </article>

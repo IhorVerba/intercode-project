@@ -1,24 +1,14 @@
 export const colors = [
   { label: "Midnight Grey", value: "grey", price: 0, img: "color-grey.png" },
-  {
-    label: "Pearl White",
-    value: "white",
-    price: 30000,
-    img: "color-white.png",
-  },
-  {
-    label: "Solid Black",
-    value: "black",
-    price: 40000,
-    img: "color-black.png",
-  },
+  { label: "Pearl White", value: "white", price: 30000, img: "color-white.png" },
+  { label: "Solid Black", value: "black", price: 40000, img: "color-black.png" },
 ];
 
 export const productsData = [
   {
     id: 1,
     name: "Volkswagen Golf",
-    img: "golf-r-line.png",
+    img: "golf-r-line1.png",
     color: colors,
     price: 1100000,
     models: [
@@ -62,7 +52,7 @@ export const productsData = [
   {
     id: 2,
     name: "Volkswagen T-Roc",
-    img: "t-roc.png",
+    img: "t-roc1.png",
     color: colors,
     models: [
       {
@@ -106,7 +96,7 @@ export const productsData = [
   {
     id: 3,
     name: "Volkswagen Tiguan",
-    img: "tiguan.png",
+    img: "tiguan1.png",
     color: colors,
     price: 1600000,
     models: [
@@ -150,7 +140,7 @@ export const productsData = [
   {
     id: 4,
     name: "Volkswagen Arteon",
-    img: "arteon-r-line.png",
+    img: "arteon-r-line1.png",
     color: colors,
     price: 2000000,
     models: [
@@ -194,7 +184,7 @@ export const productsData = [
   {
     id: 5,
     name: "Volkswagen Touareg",
-    img: "touareg.png",
+    img: "touareg1.png",
     color: colors,
     price: 3000000,
     models: [

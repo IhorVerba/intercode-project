@@ -12,7 +12,7 @@ export const ProductCard = ({ product: { id, name, img } }) => {
         />
       </div>
       <div className="ProductCard__title">
-        <h4 className="ProductCard__title-item">{name}</h4>
+        <p className="ProductCard__title-item">{name}</p>
       </div>
       <div className="ProductCard__button">
         <Link to={`/configurator/${id}`}>Огляд моделі</Link>

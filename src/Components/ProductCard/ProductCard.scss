@@ -6,10 +6,16 @@
   overflow: hidden; 
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
 
-  /* Optional: Adjust the width, padding, and margin based on your design */
+  display: flex;
+  flex-direction: column;
+
   width: 300px;
   padding: 16px;
   margin: 16px;
+
+  &:hover {
+    transform: scale(1.05);
+  }
 
   &__photo {
     margin-bottom: 12px; 
@@ -17,7 +23,7 @@
 
   &__photo-item {
     width: 100%; 
-    height: auto; 
+    height: 100%; 
     border-radius: 5px; 
   }
 
@@ -25,25 +31,22 @@
     text-align: center;
     font-size: 18px; 
     font-weight: bold; 
-    margin-bottom: 8px; 
+    margin-bottom: 30px; 
   }
 
   &__button {
-    margin-bottom: 8px; 
-  }
-
-  &__button a {
     display: block;
+    margin-bottom: 8px; 
     padding: 8px 16px; 
     text-decoration: none;
     background-color: $color-dark-blue; 
-    color: #fff;
+    color: $color-white;
     border-radius: 50px; 
     text-align: center;
     transition: background-color 0.3s ease-in-out;
-  }
-
-  &__button a:hover {
-    background-color: #0056b3; 
+    
+    &:hover {
+      background-color: #0056b3; 
+    }
   }
 }

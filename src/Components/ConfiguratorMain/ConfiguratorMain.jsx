@@ -2,7 +2,7 @@ import "./ConfiguratorMain.scss";
 import { useParams } from "react-router-dom";
 import { productsData } from "../../api/products";
 import { colors } from "../../api/products";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export const ConfiguratorMain = () => {
   const { id } = useParams();
@@ -34,17 +34,31 @@ export const ConfiguratorMain = () => {
       imagePath: buildImagePath(car.models[0], prevConfig.selectedColor, wheel),
     }));
   };
+
+  const formatNumber = (number) => {
+    return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+  } 
   
   const totalPrice =
   car.price + configuration.selectedColor.price + configuration.selectedWheel.price;
+
+  // useEffect(() => {
+  //   localStorage.setItem("config", JSON.stringify(configuration));
+  // }, [configuration]);
+
+  // useEffect(() => {
+  //   const savedConfig = localStorage.getItem("config");
+  //   if (savedConfig) {
+  //     setConfiguration(JSON.parse(savedConfig));
+  //   }
+  // }, []);
+
+
   
   return (
     <div className="ConfiguratorMain">
       <div className="ConfiguratorMain__container">
         <div className="ConfiguratorMain__imageContainer">
-          {/* <img src={`/Configurator/${car.imgConfig}`} alt={`${car.name}`} /> */}
-          {/* <img src={`/Configurator/${selectedColor.imgConfig}`}alt={`${car.name}`} /> */}
-          {/* <img src={`/Configurator/${car.models[0].white[0].wheel_1.src}`} alt={`${car.name}`} /> */}
           <img src={configuration.imagePath} alt={`${car.name}`} />
         </div>
         <div className="ConfiguratorMain__optionsContainer">
@@ -65,7 +79,7 @@ export const ConfiguratorMain = () => {
             </div>
             <div className="ConfiguratorMain__options--text">
               {`${configuration.selectedColor.label} `}
-              <b>{`UAH ${configuration.selectedColor.price}`}</b>
+              <b>{`UAH ${formatNumber(configuration.selectedColor.price)}`}</b>
               <p></p>
             </div>
           </div>
@@ -90,7 +104,7 @@ export const ConfiguratorMain = () => {
             </div>
             <div className="ConfiguratorMain__options--text">
               {`${configuration.selectedWheel.label} `}
-              <b>{`UAH ${configuration.selectedWheel.price}`}</b>
+              <b>{`UAH ${formatNumber(configuration.selectedWheel.price)}`}</b>
               <p></p>
             </div>
           </div>
@@ -99,7 +113,7 @@ export const ConfiguratorMain = () => {
       <div className="ConfiguratorMain__footer">
         <div>
           <span>
-            Загальна ціна: <b>UAH {totalPrice}</b>
+            Загальна ціна: <b>UAH {formatNumber(totalPrice)}</b>
           </span>
         </div>
       </div>
