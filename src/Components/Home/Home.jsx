@@ -19,7 +19,7 @@ export const Home = () => {
 
       {/* <div className="section__verticalLine"></div> */}
 
-      {isEnglish && <ImportantInfo />}
+      {!isEnglish && <ImportantInfo />}
     </div>
   );
 };
