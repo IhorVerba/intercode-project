@@ -56,25 +56,25 @@
       background-color: $color-blue;
     }
   }
+}
 
-  .icon {
+.icon {
+  display: block;
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &--menu {
+    background-image: url(../../assets/icons/align-left.png);
     display: block;
-    width: 24px;
-    height: 24px;
-    margin-left: 10px;
+    transition: transform 0.3s ease-in-out;
 
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-
-    &--menu {
-      background-image: url(../../assets/icons/align-left.png);
-      display: block;
-      transition: transform 0.3s ease-in-out;
-
-      &:hover {
-        transform: scale(1.1);
-      }
+    &:hover {
+      transform: scale(1.1);
     }
   }
 }

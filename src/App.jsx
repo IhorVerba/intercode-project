@@ -22,7 +22,7 @@ const App = () => {
 
   const closeMenu = () => {
     setMenuOpen(false);
-    document.body.style.overflow = ('visible');
+    document.body.style.overflow = ('auto');
   };
 
   return (
