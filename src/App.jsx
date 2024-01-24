@@ -17,10 +17,12 @@ const App = () => {
 
   const handleClick = () => {
     setMenuOpen(true);
+    document.body.style.overflow = ('hidden');
   };
 
   const closeMenu = () => {
     setMenuOpen(false);
+    document.body.style.overflow = ('visible');
   };
 
   return (
