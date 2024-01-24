@@ -10,6 +10,10 @@ export const ConfiguratorMain = () => {
   const { id } = useParams();
   const car = productsData.find((c) => c.id === parseInt(id));
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const buildImagePath = (model, color, wheel) => {
     return `/Configurator/${model[color.value][0][wheel.value].src}`;
   };

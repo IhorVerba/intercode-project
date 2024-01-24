@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import {
   Route,
   Routes,
@@ -9,7 +10,7 @@ import { Header } from "./Components/Header";
 import { Home } from './Components/Home/Home';
 import { ConfiguratorMain } from './Components/ConfiguratorMain/ConfiguratorMain';
 import { NotFoundPage } from './Components/NotFoudPage/NotFoundPage';
-import { useState } from 'react';
+
 
 const App = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
