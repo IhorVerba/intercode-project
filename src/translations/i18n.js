@@ -6,6 +6,8 @@ const resources = {
     translation: {
       newsTitle: 'Latest from the world of Volkswagen in Ukraine',
       toggleLanguage: 'Toggle Language',
+      toggleLanguageUK: 'УКР',
+      toggleLanguageEN: 'ENG',
       menu: 'Menu',
       cardButtonText_1: 'Take a closer look',
       cardButtonText_2: 'Configure',
@@ -42,6 +44,8 @@ const resources = {
     translation: {
       newsTitle: 'Актуальне зі світу Volkswagen в Україні',
       toggleLanguage: 'Змінити мову',
+      toggleLanguageUK: 'УКР',
+      toggleLanguageEN: 'ENG',
       menu: 'Меню',
       cardButtonText_1: 'Огляд моделі',
       cardButtonText_2: 'Сконфігурувати',

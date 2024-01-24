@@ -56,6 +56,11 @@
     &--cross {
       background-image: url(../../assets/./icons/x1.png);
       display: block;
+      transition: transform 0.3s ease-in-out;
+
+      &:hover {
+        transform: scale(1.1);
+      }
     }
   }
   

@@ -10,13 +10,9 @@ export const Aside = ({ closeMenu }) => {
       <div className="container">
         <div className="menu__top top-bar">
           <div className="top-bar__icons">
-            <div
-              className="icon icon--cross"
-              onClick={closeMenu}
-            ></div>
+            <div className="icon icon--cross" onClick={closeMenu}></div>
+            <div className="top-bar__text--menu">{t("close")}</div>
           </div>
-
-          <div className="top-bar__text--menu">{t("close")}</div>
         </div>
 
         <nav className="menu__nav">
