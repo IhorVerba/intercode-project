@@ -1,13 +1,9 @@
 @import '../../styles/main.scss';
 
 
-$footer-bg-color: #001e50;
-$footer-text-color: #ffffff;
-
 .Footer {
-  // background-image: -webkit-radial-gradient(top left,circle,#00437a 0,#001e50 100%);
   bottom: 0;
-  background-image: radial-gradient(circle at top left,#00437a 0,#001e50 100%);
+  background-image: radial-gradient(circle at top left, #00437a 0, #001e50 100%);
   color: $color-white;
   padding: 50px 30px;
   box-sizing: border-box;
@@ -18,6 +14,11 @@ $footer-text-color: #ffffff;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   &__section {
@@ -36,11 +37,11 @@ $footer-text-color: #ffffff;
 
           .Footer__link {
             text-decoration: none;
-            color: $footer-text-color;
+            color: $color-white;
             transition: color 0.3s ease-in-out;
 
             &:hover {
-              color: lighten($footer-text-color, 20%);
+              color: lighten($color-blue, 20%);
             }
           }
 
@@ -51,24 +52,9 @@ $footer-text-color: #ffffff;
         }
       }
     }
-  }
 
-  &__copyright {
-    margin-top: 20px;
-
-    .Footer__copyright-paragraph {
-      margin: 0;
-      font-size: 0.9em;
-    }
-
-    .Footer__link {
-      text-decoration: none;
-      color: lighten($footer-text-color, 40%);
-      transition: color 0.3s ease-in-out;
-
-      &:hover {
-        color: lighten($footer-text-color, 60%);
-      }
+    @media screen and (max-width: 768px) {
+      text-align: center;
     }
   }
 }

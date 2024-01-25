@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import "./News.scss";
 import Article1Img from "../../assets/images/news-article1.jpg";
-import Article2Img from "../../assets/images/news-article2.jpg";
+import Article2Img from "../../assets/images/news-tiguan.jpg";
 import Article3Img from "../../assets/images/news-article3.jpg";
 import Article4Img from "../../assets/images/news-article4.jpg";
 
@@ -12,11 +12,11 @@ export const News = () => {
 
   return (
     <section className="section" id="news">
-      <h2 className="section section__title">
-        <span className="section section__title-text">{t("newsTitle")}</span>
+      <h2 className="section__title">
+        <span className="section__title-text">{t("newsTitle")}</span>
       </h2>
 
-      <article className="article section__article">
+      <article className="article">
         <div className="article__container">
           <img className="article__img" src={Article1Img} alt="article" />
           <div className="article__wrapper">
@@ -33,7 +33,7 @@ export const News = () => {
         </div>
       </article>
 
-      <article className="article section__article">
+      <article className="article">
         <div className="article__container">
           <img className="article__img" src={Article2Img} alt="article" />
           <div className="article__wrapper">
@@ -50,7 +50,7 @@ export const News = () => {
         </div>
       </article>
 
-      <article className="article section__article">
+      <article className="article">
         <div className="article__container">
           <img className="article__img" src={Article3Img} alt="article" />
           <div className="article__wrapper">
@@ -62,7 +62,7 @@ export const News = () => {
         </div>
       </article>
 
-      <article className="article section__article">
+      <article className="article">
         <div className="article__container">
           <img className="article__img" src={Article4Img} alt="article" />
           <div className="article__wrapper">

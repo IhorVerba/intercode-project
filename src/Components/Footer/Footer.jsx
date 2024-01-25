@@ -14,9 +14,9 @@ export const Footer = () => {
             <nav>
               <ul class="Footer__navlist">
                 <li class="Footer__navlist-item">
-                  <Link to="not-found" class="Footer__link Footer__title">
+                  <p class="Footer__title">
                     {t("footerVolkswagen")}
-                  </Link>
+                  </p>
                 </li>
 
                 <li class="Footer__navlist-item">
@@ -70,9 +70,9 @@ export const Footer = () => {
             <nav>
               <ul class="Footer__navlist">
                 <li class="Footer__navlist-item">
-                  <Link to="not-found" class="Footer__link Footer__title">
+                  <p class="Footer__title">
                     {t("footerSupport")}
-                  </Link>
+                  </p>
                 </li>
 
                 <li class="Footer__navlist-item">

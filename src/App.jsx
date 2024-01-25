@@ -29,7 +29,7 @@ const App = () => {
     <div className={`App ${isMenuOpen ? 'menu-open' : ''}`}>
       <Header onClickMenu={handleClick} />
       
-      {isMenuOpen && <Aside closeMenu={closeMenu} />}
+      {isMenuOpen && <Aside className="menu" closeMenu={closeMenu} />}
 
 
       <main className="main-content">
