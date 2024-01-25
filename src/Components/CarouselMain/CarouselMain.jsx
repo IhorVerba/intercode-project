@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef, useLayoutEffect } from "react";
+import React, { useEffect, useState, useRef, useLayoutEffect, useCallback } from "react";
 import "./CarouselMain.scss";
 import mainTouaregImage from "../../assets/images/main-touareg.jpg";
 import mainTiguanImage from "../../assets/images/main-tiguan.jpg";
@@ -35,11 +35,11 @@ export const CarouselMain = () => {
     );
   };
 
-  const handleRightSlide = () => {
+  const handleRightSlide = useCallback(() => {
     setCurrentImageIndex((prevIndex) =>
       prevIndex === lastImageIndex ? firstImageIndex : prevIndex + 1
     );
-  };
+  }, [lastImageIndex]);
 
   useEffect(() => {
     const timerId = setInterval(() => {
@@ -47,7 +47,7 @@ export const CarouselMain = () => {
     }, 5000);
 
     return () => clearInterval(timerId);
-  }, [currentImageIndex]);
+  }, [currentImageIndex, handleRightSlide]);
 
   return (
     <section className="Carousel">

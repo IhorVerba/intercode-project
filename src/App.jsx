@@ -26,10 +26,9 @@ const App = () => {
   };
 
   return (
-    <div className={`App ${isMenuOpen ? 'menu-open' : ''}`}>
+    <div className={`App`}>
       <Header onClickMenu={handleClick} />
-      
-      {isMenuOpen && <Aside className="menu" closeMenu={closeMenu} />}
+      <Aside isMenuOpen={isMenuOpen} closeMenu={closeMenu} />
 
 
       <main className="main-content">

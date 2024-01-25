@@ -6,10 +6,10 @@
   display: flex;
   gap: 16px;
   justify-content: flex-start;
-  flex-wrap: nowrap; /* Prevent items from wrapping to the next row */
-  overflow-x: auto; /* Enable horizontal scrolling if needed */
-  overflow-y: hidden; /* Hide vertical scrollbar */
-  max-height: 100vh; /* Set a maximum height to enable vertical scrolling */
+  flex-wrap: nowrap; 
+  overflow-x: auto;
+  overflow-y: hidden; 
+  max-height: 100vh; 
 
   &::-webkit-scrollbar {
     width: 12px; 

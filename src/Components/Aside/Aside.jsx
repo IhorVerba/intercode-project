@@ -2,11 +2,11 @@ import { Link } from "react-router-dom";
 import "./Aside.scss";
 import { useTranslation } from "react-i18next";
 
-export const Aside = ({ closeMenu }) => {
+export const Aside = ({ isMenuOpen, closeMenu }) => {
   const { t } = useTranslation();
 
   return (
-    <aside className="menu">
+    <aside className={`menu ${isMenuOpen ? 'menu--open' : ''}`}>
       <div className="container">
         <div className="menu__top top-bar">
           <div className="top-bar__icons">
