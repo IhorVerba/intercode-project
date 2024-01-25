@@ -40,6 +40,9 @@ const resources = {
       configuratorColor: "Choose your exterior color",
       configuratorWheels: "Choose your wheels",
       configuratorPrice: "Total price:",
+      notFoundTitle: "Page Not Found",
+      notFoundText:
+        "Apologies, the page you are looking for no longer exists. Perhaps you can return back to the site's homepage and see if you can find what you are looking for.",
     },
   },
   uk: {
@@ -80,15 +83,18 @@ const resources = {
       configuratorColor: "Обрати колір",
       configuratorWheels: "Обрати колеса",
       configuratorPrice: "Загальна ціна:",
+      notFoundTitle: "Сторінка не знайдена",
+      notFoundText:
+        "Перепрошуємо, сторінка, яку ви шукаєте, більше не існує. Можливо, Ви спробуєте перейти на головну сторінку сайту і спробуєте знайти те, що Ви шукаєте.",
     },
   },
 };
 
 i18n.use(initReactI18next).init({
   resources,
-  lng: "uk", // Default language
+  lng: "uk",
   interpolation: {
-    escapeValue: false, // React already escapes values
+    escapeValue: false,
   },
 });
 
