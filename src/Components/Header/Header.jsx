@@ -1,7 +1,6 @@
-/* eslint-disable jsx-a11y/anchor-has-content */
 import React from "react";
 import "./Header.scss";
-import Logo from "../../assets/icons/1024px-Volkswagen_logo_2019.svg.png";
+import Logo from "../../assets/icons/vwlogo.png";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
