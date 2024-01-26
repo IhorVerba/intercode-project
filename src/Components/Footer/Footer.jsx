@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/anchor-has-content */
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import "./Footer.scss";
